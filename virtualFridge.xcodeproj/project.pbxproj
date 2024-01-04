@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAC5A6D92B475A38005BC05F /* virtualFridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6D82B475A38005BC05F /* virtualFridgeApp.swift */; };
+		FAC5A6DD2B475A3A005BC05F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5A6DC2B475A3A005BC05F /* Assets.xcassets */; };
+		FAC5A6E02B475A3A005BC05F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5A6DF2B475A3A005BC05F /* Preview Assets.xcassets */; };
+		FAC5A6E22B475A3A005BC05F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6E12B475A3A005BC05F /* Persistence.swift */; };
+		FAC5A6E52B475A3A005BC05F /* virtualFridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6E32B475A3A005BC05F /* virtualFridge.xcdatamodeld */; };
+		FAC5A6F12B475B65005BC05F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F02B475B65005BC05F /* User.swift */; };
+		FAC5A6F32B475B85005BC05F /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F22B475B85005BC05F /* UserItem.swift */; };
+		FAC5A6F52B475C23005BC05F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F42B475C23005BC05F /* MainView.swift */; };
+		FAC5A6F72B475C32005BC05F /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F62B475C32005BC05F /* FridgeView.swift */; };
+		FAC5A6F92B475C3E005BC05F /* FridgeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F82B475C3E005BC05F /* FridgeItemView.swift */; };
+		FAC5A6FB2B475C4F005BC05F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6FA2B475C4F005BC05F /* LogInView.swift */; };
+		FAC5A6FD2B475C62005BC05F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6FC2B475C62005BC05F /* RegisterView.swift */; };
+		FAC5A6FF2B475C92005BC05F /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6FE2B475C92005BC05F /* NewItemView.swift */; };
+		FAC5A7012B475CE9005BC05F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A7002B475CE9005BC05F /* MainViewModel.swift */; };
+		FAC5A7032B475CFB005BC05F /* FridgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A7022B475CFB005BC05F /* FridgeViewModel.swift */; };
+		FAC5A7092B475D47005BC05F /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A7082B475D47005BC05F /* LogInViewModel.swift */; };
+		FAC5A70B2B475D77005BC05F /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A70A2B475D77005BC05F /* NewItemViewModel.swift */; };
+		FAC5A70D2B475D92005BC05F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A70C2B475D92005BC05F /* RegisterViewModel.swift */; };
+		FAC5A70F2B475E7D005BC05F /* FridgeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAC5A6D52B475A38005BC05F /* virtualFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = virtualFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC5A6D82B475A38005BC05F /* virtualFridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = virtualFridgeApp.swift; sourceTree = "<group>"; };
+		FAC5A6DC2B475A3A005BC05F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC5A6DF2B475A3A005BC05F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAC5A6E12B475A3A005BC05F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FAC5A6E42B475A3A005BC05F /* virtualFridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = virtualFridge.xcdatamodel; sourceTree = "<group>"; };
+		FAC5A6F02B475B65005BC05F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAC5A6F22B475B85005BC05F /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		FAC5A6F42B475C23005BC05F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FAC5A6F62B475C32005BC05F /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
+		FAC5A6F82B475C3E005BC05F /* FridgeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemView.swift; sourceTree = "<group>"; };
+		FAC5A6FA2B475C4F005BC05F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		FAC5A6FC2B475C62005BC05F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FAC5A6FE2B475C92005BC05F /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		FAC5A7002B475CE9005BC05F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FAC5A7022B475CFB005BC05F /* FridgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewModel.swift; sourceTree = "<group>"; };
+		FAC5A7082B475D47005BC05F /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		FAC5A70A2B475D77005BC05F /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
+		FAC5A70C2B475D92005BC05F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC5A6D22B475A38005BC05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAC5A6CC2B475A38005BC05F = {
+			isa = PBXGroup;
+			children = (
+				FAC5A6D72B475A38005BC05F /* virtualFridge */,
+				FAC5A6D62B475A38005BC05F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC5A6D62B475A38005BC05F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5A6D52B475A38005BC05F /* virtualFridge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC5A6D72B475A38005BC05F /* virtualFridge */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5A6EE2B475A9F005BC05F /* Other */,
+				FAC5A6EF2B475ADC005BC05F /* Model */,
+				FAC5A6ED2B475A96005BC05F /* ViewModel */,
+				FAC5A6EC2B475A79005BC05F /* View */,
+				FAC5A6DC2B475A3A005BC05F /* Assets.xcassets */,
+				FAC5A6E12B475A3A005BC05F /* Persistence.swift */,
+				FAC5A6E32B475A3A005BC05F /* virtualFridge.xcdatamodeld */,
+				FAC5A6DE2B475A3A005BC05F /* Preview Content */,
+			);
+			path = virtualFridge;
+			sourceTree = "<group>";
+		};
+		FAC5A6DE2B475A3A005BC05F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5A6DF2B475A3A005BC05F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAC5A6EC2B475A79005BC05F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5A6F42B475C23005BC05F /* MainView.swift */,
+				FAC5A6F62B475C32005BC05F /* FridgeView.swift */,
+				FAC5A6F82B475C3E005BC05F /* FridgeItemView.swift */,
+				FAC5A6FA2B475C4F005BC05F /* LogInView.swift */,
+				FAC5A6FC2B475C62005BC05F /* RegisterView.swift */,
+				FAC5A6FE2B475C92005BC05F /* NewItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAC5A6ED2B475A96005BC05F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5A7002B475CE9005BC05F /* MainViewModel.swift */,
+				FAC5A7022B475CFB005BC05F /* FridgeViewModel.swift */,
+				FAC5A70A2B475D77005BC05F /* NewItemViewModel.swift */,
+				FAC5A7082B475D47005BC05F /* LogInViewModel.swift */,
+				FAC5A70C2B475D92005BC05F /* RegisterViewModel.swift */,
+				FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAC5A6EE2B475A9F005BC05F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5A6D82B475A38005BC05F /* virtualFridgeApp.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FAC5A6EF2B475ADC005BC05F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5A6F02B475B65005BC05F /* User.swift */,
+				FAC5A6F22B475B85005BC05F /* UserItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC5A6D42B475A38005BC05F /* virtualFridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC5A6E82B475A3A005BC05F /* Build configuration list for PBXNativeTarget "virtualFridge" */;
+			buildPhases = (
+				FAC5A6D12B475A38005BC05F /* Sources */,
+				FAC5A6D22B475A38005BC05F /* Frameworks */,
+				FAC5A6D32B475A38005BC05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = virtualFridge;
+			productName = virtualFridge;
+			productReference = FAC5A6D52B475A38005BC05F /* virtualFridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC5A6CD2B475A38005BC05F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					FAC5A6D42B475A38005BC05F = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = FAC5A6D02B475A38005BC05F /* Build configuration list for PBXProject "virtualFridge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC5A6CC2B475A38005BC05F;
+			productRefGroup = FAC5A6D62B475A38005BC05F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC5A6D42B475A38005BC05F /* virtualFridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC5A6D32B475A38005BC05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC5A6E02B475A3A005BC05F /* Preview Assets.xcassets in Resources */,
+				FAC5A6DD2B475A3A005BC05F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC5A6D12B475A38005BC05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC5A6F32B475B85005BC05F /* UserItem.swift in Sources */,
+				FAC5A7092B475D47005BC05F /* LogInViewModel.swift in Sources */,
+				FAC5A6FD2B475C62005BC05F /* RegisterView.swift in Sources */,
+				FAC5A6F52B475C23005BC05F /* MainView.swift in Sources */,
+				FAC5A6F92B475C3E005BC05F /* FridgeItemView.swift in Sources */,
+				FAC5A6F12B475B65005BC05F /* User.swift in Sources */,
+				FAC5A70B2B475D77005BC05F /* NewItemViewModel.swift in Sources */,
+				FAC5A7032B475CFB005BC05F /* FridgeViewModel.swift in Sources */,
+				FAC5A70D2B475D92005BC05F /* RegisterViewModel.swift in Sources */,
+				FAC5A70F2B475E7D005BC05F /* FridgeItemViewModel.swift in Sources */,
+				FAC5A6E22B475A3A005BC05F /* Persistence.swift in Sources */,
+				FAC5A6E52B475A3A005BC05F /* virtualFridge.xcdatamodeld in Sources */,
+				FAC5A6FB2B475C4F005BC05F /* LogInView.swift in Sources */,
+				FAC5A6FF2B475C92005BC05F /* NewItemView.swift in Sources */,
+				FAC5A6F72B475C32005BC05F /* FridgeView.swift in Sources */,
+				FAC5A6D92B475A38005BC05F /* virtualFridgeApp.swift in Sources */,
+				FAC5A7012B475CE9005BC05F /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAC5A6E62B475A3A005BC05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC5A6E72B475A3A005BC05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC5A6E92B475A3A005BC05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"virtualFridge/Preview Content\"";
+				DEVELOPMENT_TEAM = 654F5XSZBD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hey.virtualFridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC5A6EA2B475A3A005BC05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"virtualFridge/Preview Content\"";
+				DEVELOPMENT_TEAM = 654F5XSZBD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hey.virtualFridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC5A6D02B475A38005BC05F /* Build configuration list for PBXProject "virtualFridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC5A6E62B475A3A005BC05F /* Debug */,
+				FAC5A6E72B475A3A005BC05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC5A6E82B475A3A005BC05F /* Build configuration list for PBXNativeTarget "virtualFridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC5A6E92B475A3A005BC05F /* Debug */,
+				FAC5A6EA2B475A3A005BC05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAC5A6E32B475A3A005BC05F /* virtualFridge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAC5A6E42B475A3A005BC05F /* virtualFridge.xcdatamodel */,
+			);
+			currentVersion = FAC5A6E42B475A3A005BC05F /* virtualFridge.xcdatamodel */;
+			path = virtualFridge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAC5A6CD2B475A38005BC05F /* Project object */;
+}
