@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C5015A22B4E064900F528B4 /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A12B4E064900F528B4 /* FridgeView.swift */; };
+		5C5015A42B4E066D00F528B4 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A32B4E066D00F528B4 /* NewItemView.swift */; };
+		5C5015A62B4E068A00F528B4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A52B4E068A00F528B4 /* RegisterView.swift */; };
+		5C5015AA2B4E106C00F528B4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A92B4E106C00F528B4 /* HeaderView.swift */; };
+		5C5015AC2B4E12EE00F528B4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F42B475C23005BC05F /* MainView.swift */; };
 		FAC5A6D92B475A38005BC05F /* virtualFridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6D82B475A38005BC05F /* virtualFridgeApp.swift */; };
 		FAC5A6DD2B475A3A005BC05F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5A6DC2B475A3A005BC05F /* Assets.xcassets */; };
 		FAC5A6E02B475A3A005BC05F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5A6DF2B475A3A005BC05F /* Preview Assets.xcassets */; };
@@ -14,12 +19,8 @@
 		FAC5A6E52B475A3A005BC05F /* virtualFridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6E32B475A3A005BC05F /* virtualFridge.xcdatamodeld */; };
 		FAC5A6F12B475B65005BC05F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F02B475B65005BC05F /* User.swift */; };
 		FAC5A6F32B475B85005BC05F /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F22B475B85005BC05F /* UserItem.swift */; };
-		FAC5A6F52B475C23005BC05F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F42B475C23005BC05F /* MainView.swift */; };
-		FAC5A6F72B475C32005BC05F /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F62B475C32005BC05F /* FridgeView.swift */; };
 		FAC5A6F92B475C3E005BC05F /* FridgeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F82B475C3E005BC05F /* FridgeItemView.swift */; };
 		FAC5A6FB2B475C4F005BC05F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6FA2B475C4F005BC05F /* LogInView.swift */; };
-		FAC5A6FD2B475C62005BC05F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6FC2B475C62005BC05F /* RegisterView.swift */; };
-		FAC5A6FF2B475C92005BC05F /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6FE2B475C92005BC05F /* NewItemView.swift */; };
 		FAC5A7012B475CE9005BC05F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A7002B475CE9005BC05F /* MainViewModel.swift */; };
 		FAC5A7032B475CFB005BC05F /* FridgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A7022B475CFB005BC05F /* FridgeViewModel.swift */; };
 		FAC5A7092B475D47005BC05F /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A7082B475D47005BC05F /* LogInViewModel.swift */; };
@@ -29,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C5015A12B4E064900F528B4 /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
+		5C5015A32B4E066D00F528B4 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		5C5015A52B4E068A00F528B4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		5C5015A92B4E106C00F528B4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FAC5A6D52B475A38005BC05F /* virtualFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = virtualFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC5A6D82B475A38005BC05F /* virtualFridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = virtualFridgeApp.swift; sourceTree = "<group>"; };
 		FAC5A6DC2B475A3A005BC05F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,11 +43,8 @@
 		FAC5A6F02B475B65005BC05F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FAC5A6F22B475B85005BC05F /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
 		FAC5A6F42B475C23005BC05F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		FAC5A6F62B475C32005BC05F /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
 		FAC5A6F82B475C3E005BC05F /* FridgeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeItemView.swift; sourceTree = "<group>"; };
 		FAC5A6FA2B475C4F005BC05F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		FAC5A6FC2B475C62005BC05F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		FAC5A6FE2B475C92005BC05F /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		FAC5A7002B475CE9005BC05F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FAC5A7022B475CFB005BC05F /* FridgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewModel.swift; sourceTree = "<group>"; };
 		FAC5A7082B475D47005BC05F /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
@@ -105,11 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				FAC5A6F42B475C23005BC05F /* MainView.swift */,
-				FAC5A6F62B475C32005BC05F /* FridgeView.swift */,
 				FAC5A6F82B475C3E005BC05F /* FridgeItemView.swift */,
 				FAC5A6FA2B475C4F005BC05F /* LogInView.swift */,
-				FAC5A6FC2B475C62005BC05F /* RegisterView.swift */,
-				FAC5A6FE2B475C92005BC05F /* NewItemView.swift */,
+				5C5015A12B4E064900F528B4 /* FridgeView.swift */,
+				5C5015A32B4E066D00F528B4 /* NewItemView.swift */,
+				5C5015A52B4E068A00F528B4 /* RegisterView.swift */,
+				5C5015A92B4E106C00F528B4 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,22 +218,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC5A6F32B475B85005BC05F /* UserItem.swift in Sources */,
+				5C5015AC2B4E12EE00F528B4 /* MainView.swift in Sources */,
+				5C5015AA2B4E106C00F528B4 /* HeaderView.swift in Sources */,
 				FAC5A7092B475D47005BC05F /* LogInViewModel.swift in Sources */,
-				FAC5A6FD2B475C62005BC05F /* RegisterView.swift in Sources */,
-				FAC5A6F52B475C23005BC05F /* MainView.swift in Sources */,
 				FAC5A6F92B475C3E005BC05F /* FridgeItemView.swift in Sources */,
 				FAC5A6F12B475B65005BC05F /* User.swift in Sources */,
 				FAC5A70B2B475D77005BC05F /* NewItemViewModel.swift in Sources */,
 				FAC5A7032B475CFB005BC05F /* FridgeViewModel.swift in Sources */,
 				FAC5A70D2B475D92005BC05F /* RegisterViewModel.swift in Sources */,
+				5C5015A62B4E068A00F528B4 /* RegisterView.swift in Sources */,
 				FAC5A70F2B475E7D005BC05F /* FridgeItemViewModel.swift in Sources */,
 				FAC5A6E22B475A3A005BC05F /* Persistence.swift in Sources */,
 				FAC5A6E52B475A3A005BC05F /* virtualFridge.xcdatamodeld in Sources */,
 				FAC5A6FB2B475C4F005BC05F /* LogInView.swift in Sources */,
-				FAC5A6FF2B475C92005BC05F /* NewItemView.swift in Sources */,
-				FAC5A6F72B475C32005BC05F /* FridgeView.swift in Sources */,
 				FAC5A6D92B475A38005BC05F /* virtualFridgeApp.swift in Sources */,
 				FAC5A7012B475CE9005BC05F /* MainViewModel.swift in Sources */,
+				5C5015A22B4E064900F528B4 /* FridgeView.swift in Sources */,
+				5C5015A42B4E066D00F528B4 /* NewItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

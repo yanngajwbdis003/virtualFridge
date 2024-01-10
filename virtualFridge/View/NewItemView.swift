@@ -2,7 +2,7 @@
 //  NewItemView.swift
 //  virtualFridge
 //
-//  Created by Monica Yang on 2024-01-04.
+//  Created by LOGIN on 2024-01-09.
 //
 
 import SwiftUI
@@ -13,6 +13,8 @@ struct NewItemView: View {
     }
 }
 
-#Preview {
-    NewItemView()
+struct NewItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        NewItemView()
+    }
 }

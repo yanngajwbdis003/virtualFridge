@@ -2,7 +2,7 @@
 //  FridgeView.swift
 //  virtualFridge
 //
-//  Created by Monica Yang on 2024-01-04.
+//  Created by LOGIN on 2024-01-09.
 //
 
 import SwiftUI
@@ -13,6 +13,8 @@ struct FridgeView: View {
     }
 }
 
-#Preview {
-    FridgeView()
+struct FridgeView_Previews: PreviewProvider {
+    static var previews: some View {
+        FridgeView()
+    }
 }
