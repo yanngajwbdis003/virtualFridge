@@ -7,16 +7,11 @@
 
 import SwiftUI
 
-struct User: View {
+struct User {
     var username: String
     var email: String
     var password: String
-    
-    var body: some View {
-        Text("Hey! github commit test!! :))")
-        Text("smile? ")
-    }
-    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     init(username: String, email:String, password: String) {
         self.username = username
         self.email = email

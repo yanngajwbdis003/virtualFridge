@@ -10,8 +10,8 @@
 		5C5015A22B4E064900F528B4 /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A12B4E064900F528B4 /* FridgeView.swift */; };
 		5C5015A42B4E066D00F528B4 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A32B4E066D00F528B4 /* NewItemView.swift */; };
 		5C5015A62B4E068A00F528B4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A52B4E068A00F528B4 /* RegisterView.swift */; };
-		5C5015AA2B4E106C00F528B4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A92B4E106C00F528B4 /* HeaderView.swift */; };
 		5C5015AC2B4E12EE00F528B4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6F42B475C23005BC05F /* MainView.swift */; };
+		5CBE8B2F2B4F5ECD00D40945 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE8B2E2B4F5ECD00D40945 /* HeaderView.swift */; };
 		FAC5A6D92B475A38005BC05F /* virtualFridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A6D82B475A38005BC05F /* virtualFridgeApp.swift */; };
 		FAC5A6DD2B475A3A005BC05F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5A6DC2B475A3A005BC05F /* Assets.xcassets */; };
 		FAC5A6E02B475A3A005BC05F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5A6DF2B475A3A005BC05F /* Preview Assets.xcassets */; };
@@ -33,7 +33,7 @@
 		5C5015A12B4E064900F528B4 /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
 		5C5015A32B4E066D00F528B4 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		5C5015A52B4E068A00F528B4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		5C5015A92B4E106C00F528B4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5CBE8B2E2B4F5ECD00D40945 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FAC5A6D52B475A38005BC05F /* virtualFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = virtualFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC5A6D82B475A38005BC05F /* virtualFridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = virtualFridgeApp.swift; sourceTree = "<group>"; };
 		FAC5A6DC2B475A3A005BC05F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				5C5015A12B4E064900F528B4 /* FridgeView.swift */,
 				5C5015A32B4E066D00F528B4 /* NewItemView.swift */,
 				5C5015A52B4E068A00F528B4 /* RegisterView.swift */,
-				5C5015A92B4E106C00F528B4 /* HeaderView.swift */,
+				5CBE8B2E2B4F5ECD00D40945 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,8 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC5A6F32B475B85005BC05F /* UserItem.swift in Sources */,
+				5CBE8B2F2B4F5ECD00D40945 /* HeaderView.swift in Sources */,
 				5C5015AC2B4E12EE00F528B4 /* MainView.swift in Sources */,
-				5C5015AA2B4E106C00F528B4 /* HeaderView.swift in Sources */,
 				FAC5A7092B475D47005BC05F /* LogInViewModel.swift in Sources */,
 				FAC5A6F92B475C3E005BC05F /* FridgeItemView.swift in Sources */,
 				FAC5A6F12B475B65005BC05F /* User.swift in Sources */,
@@ -368,7 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"virtualFridge/Preview Content\"";
-				DEVELOPMENT_TEAM = 654F5XSZBD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -376,6 +376,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,10 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"virtualFridge/Preview Content\"";
-				DEVELOPMENT_TEAM = 654F5XSZBD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -405,6 +406,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +414,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hey.virtualFridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

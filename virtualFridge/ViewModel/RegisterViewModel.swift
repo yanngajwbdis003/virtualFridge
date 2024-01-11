@@ -13,6 +13,8 @@ struct RegisterViewModel: View {
     }
 }
 
-#Preview {
-    RegisterViewModel()
+struct RegisterViewModel_Previews : PreviewProvider {
+    static var previews : some View {
+        RegisterViewModel()
+    }
 }

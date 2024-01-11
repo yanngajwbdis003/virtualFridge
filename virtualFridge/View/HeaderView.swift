@@ -2,7 +2,7 @@
 //  HeaderView.swift
 //  virtualFridge
 //
-//  Created by LOGIN on 2024-01-09.
+//  Created by Eojin Lee on 2024-01-10.
 //
 
 import SwiftUI
@@ -10,32 +10,31 @@ import SwiftUI
 struct HeaderView: View {
     let title: String
     let subtitle: String
-    let menuColor: Color
+    let bgColor: Color
     
     var body: some View {
         ZStack {
-            
             RoundedRectangle(cornerRadius: 0)
-                .foregroundColor(menuColor)
-                
+                .foregroundColor(bgColor)
+            
             VStack {
                 Text(title)
-                    .font(.system(size: 50))
+                    .font(.system(size:45))
                     .foregroundColor(Color.white)
-                    .bold
+                    .bold()
                 
                 Text(subtitle)
-                    .font(.system(size: 30))
+                    .font(.system(size:30))
                     .foregroundColor(Color.white)
             }
-            
         }
-        
     }
 }
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(title: "TITLE", subtitle: "subtitle", menuColor: Blue)
+        HeaderView(title: "ExampleTitle",
+                   subtitle: "example subtitle",
+                   bgColor: Color.green)
     }
 }

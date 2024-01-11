@@ -14,14 +14,21 @@ struct LogInView: View {
     
     var body: some View {
         VStack {
-            HeaderView(title: "Your Virtual Fridge!", subtitle: "reduce food waste", menuColor: Color.green)
+            HeaderView(title: "Your Virtual Fridge!", subtitle: "reduce food waste", bgColor: Color.green)
             
             Form {
                 TextField("Email Address", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 TextField("Password", text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                Button("Log In") {
+                    
+                }
+                .frame(maxWidth: .infinity)
             }
+            
+            
         }
         
     }

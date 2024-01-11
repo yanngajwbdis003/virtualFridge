@@ -13,6 +13,9 @@ struct LogInViewModel: View {
     }
 }
 
-#Preview {
-    LogInViewModel()
+
+struct LogInViewModel_Previews : PreviewProvider {
+    static var previews : some View {
+        LogInViewModel()
+    }
 }
