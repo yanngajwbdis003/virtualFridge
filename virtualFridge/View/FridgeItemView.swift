@@ -13,6 +13,8 @@ struct FridgeItemView: View {
     }
 }
 
-#Preview {
-    FridgeItemView()
+struct FridgeItem_Previews : PreviewProvider {
+    static var previews : some View {
+        FridgeItemView()
+    }
 }

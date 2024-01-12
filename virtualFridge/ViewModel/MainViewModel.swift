@@ -13,6 +13,8 @@ struct MainViewModel: View {
     }
 }
 
-#Preview {
-    MainViewModel()
+struct MainViewModel_Previews : PreviewProvider {
+    static var previews : some View {
+        MainViewModel()
+    }
 }

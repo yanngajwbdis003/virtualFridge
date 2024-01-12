@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct LogInView: View {
+    
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HeaderView(title: "Your Virtual Fridge!", subtitle: "reduce food waste", bgColor: Color.green)
+            
+            Form {
+                TextField("Email Address", text: $email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Password", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                Button("Log In") {
+                    
+                }
+                .frame(maxWidth: .infinity)
+            }
+            
+            
+        }
+        
     }
 }
 
-#Preview {
-    LogInView()
+struct LogInView_Previews : PreviewProvider {
+    static var previews : some View {
+        LogInView()
+    }
 }

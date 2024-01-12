@@ -2,17 +2,38 @@
 //  NewItemView.swift
 //  virtualFridge
 //
-//  Created by Monica Yang on 2024-01-04.
+//  Created by LOGIN on 2024-01-09.
 //
 
 import SwiftUI
 
 struct NewItemView: View {
+    @StateObject var viewModel = NewItemViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Text("New Item")
+                .bold()
+                .font(.system(size: 30))
+            
+            Form {
+                
+                TextField("Item Name", text: $viewModel.name)
+                
+                DatePicker("Expiry Date", selection: $viewModel.expiaryDate)
+                
+                Button("Save") {
+                    viewModel.save()
+                }
+               
+            }
+        }
     }
 }
 
-#Preview {
-    NewItemView()
+struct NewItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        NewItemView()
+    }
 }
