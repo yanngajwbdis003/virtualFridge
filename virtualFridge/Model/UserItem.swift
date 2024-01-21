@@ -9,22 +9,40 @@
 
 import SwiftUI
 
-struct UserItem: View {
+class UserItem : Equatable, Hashable {
     
-    let name: String
-    let expirationDate: Date
-    var quantity: Int
-    var timeUntilExpiration : Int
+    var name: String
+    var expirationDate: Date
     var isExpired: Bool
+    var description: String
     
-    var body: some View {
-        Text("hi :)")
+    init(name: String, expirationDate: Date, description: String) {
+        self.name = name
+        self.expirationDate = expirationDate
+        self.description = description
+        isExpired = false
     }
     
-    mutating func updateIsExpired() {
-        if timeUntilExpiration <= 0 {
-            isExpired = true
-        }
+    init(name: String) {
+        self.name = name
+        self.expirationDate = Date()
+        self.description = "description"
+        isExpired = false
     }
+    
+    
+    static func == (lhs: UserItem, rhs: UserItem) -> Bool {
+        return lhs.name == rhs.name && rhs.expirationDate == lhs.expirationDate
+    }
+    
+    var hash: Int {
+        return name.hashValue ^ expirationDate.hashValue
+    }
+    
+    func hash(into hasher: inout Hasher){
+        hasher.combine(name)
+        hasher.combine(expirationDate)
+    }
+    
 }
 
