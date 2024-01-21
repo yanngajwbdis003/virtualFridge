@@ -10,41 +10,49 @@ import SwiftUI
 
 struct FridgeItemView: View {
     @Binding var item: UserItem
-    @State private var newName: String = ""
-    @State private var newExpirationDate: Date = Date()
-    @State private var newDescription: String = ""
+    @ObservedObject private var viewModel: FridgeItemViewModel
     
     init(item: Binding<UserItem>) {
         self._item = item
-        self._newName = State(initialValue: item.wrappedValue.name)
-        self._newExpirationDate = State(initialValue: item.wrappedValue.expirationDate)
-        self._newDescription = State(initialValue: item.wrappedValue.description)
+        self.viewModel = FridgeItemViewModel(item: item.wrappedValue)
     }
     
     var body: some View {
-        
-        VStack {
-            Text("Edit Item")
-                .bold()
-                .font(.system(size: 30))
-            
-            Form {
+        NavigationView {
+            VStack {
+                Text("Edit Item")
+                    .bold()
+                    .font(.system(size: 30))
                 
-                TextField("Name", text: $newName)
-                DatePicker("Expiary Date", selection: $newExpirationDate)
-                TextField("Description", text: $newDescription)
+                Form {
+                    
+                    TextField("Name", text: $viewModel.newName)
+                    DatePicker("Expiary Date", selection: $viewModel.newExpirationDate)
+                    TextField("Description", text: $viewModel.newDescription)
+                    
+                    
+                    HStack {
+                        Button("Save") {
+                            viewModel.updateInfo(to: &item)
+                        }
+                        .padding()
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: FridgeView()) {
+                            Text("Cancel")
+                        }
+                        .isDetailLink(false)
+                        .padding
+                    
+                    }
+                    .padding(.horizontal)
+                }
             }
             
-//            HStack {
-//                Button("save", action: <#T##() -> Void#>)
-//                
-//                Button("cancel", action: )
-//            }
         }
+        
     }
-   
-    
-    
 }
 
 struct FridgeItem_Previews : PreviewProvider {

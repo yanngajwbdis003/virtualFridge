@@ -152,10 +152,10 @@
 			children = (
 				FAC5A7002B475CE9005BC05F /* MainViewModel.swift */,
 				FAC5A7022B475CFB005BC05F /* FridgeViewModel.swift */,
+				FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */,
 				FAC5A70A2B475D77005BC05F /* NewItemViewModel.swift */,
 				FAC5A7082B475D47005BC05F /* LogInViewModel.swift */,
 				FAC5A70C2B475D92005BC05F /* RegisterViewModel.swift */,
-				FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
