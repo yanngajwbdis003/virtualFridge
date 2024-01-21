@@ -8,16 +8,17 @@
 import SwiftUI
 
 class FridgeItemViewModel : ObservableObject {
-    var item: UserItem
+    @Binding var item: UserItem
     @Published var newName: String = ""
     @Published var newExpirationDate: Date = Date()
     @Published var newDescription: String = ""
+    @Published var shouldNavigate: Bool = false;
     
-    init (item: UserItem) {
-        self.item = item
-        self.newName = item.name
-        self.newExpirationDate = item.expirationDate
-        self.newDescription = item.description
+    init (item: Binding<UserItem>) {
+        self._item = item
+        self.newName = item.wrappedValue.name
+        self.newExpirationDate = item.wrappedValue.expirationDate
+        self.newDescription = item.wrappedValue.description
     }
     
     func updateInfo(to item: inout UserItem) {

@@ -14,11 +14,12 @@ struct FridgeItemView: View {
     
     init(item: Binding<UserItem>) {
         self._item = item
-        self.viewModel = FridgeItemViewModel(item: item.wrappedValue)
+        self.viewModel = FridgeItemViewModel(item: item)
     }
     
     var body: some View {
         NavigationView {
+            
             VStack {
                 Text("Edit Item")
                     .bold()
@@ -27,33 +28,36 @@ struct FridgeItemView: View {
                 Form {
                     
                     TextField("Name", text: $viewModel.newName)
-                    DatePicker("Expiary Date", selection: $viewModel.newExpirationDate)
+                    
+                    DatePicker(
+                        "Expiry Date",
+                            selection: $viewModel.newExpirationDate,
+                            displayedComponents: [.date]
+                        )
                     TextField("Description", text: $viewModel.newDescription)
                     
-                    
-                    HStack {
-                        Button("Save") {
-                            viewModel.updateInfo(to: &item)
-                        }
-                        .padding()
-                        
-                        Spacer()
-                        
-                        NavigationLink(destination: FridgeView()) {
-                            Text("Cancel")
-                        }
-                        .isDetailLink(false)
-                        .padding
-                    
+                    Button("Save") {
+                        viewModel.updateInfo(to: &item)
+                        viewModel.shouldNavigate = true
                     }
-                    .padding(.horizontal)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                 
+                    if viewModel.shouldNavigate {
+                        NavigationLink(destination: FridgeView().navigationBarBackButtonHidden(true), isActive: $viewModel.shouldNavigate) {
+                            EmptyView()
+                        }
+                        .hidden()
+                    }
+                    
                 }
             }
             
         }
-        
+            
     }
+        
 }
+
 
 struct FridgeItem_Previews : PreviewProvider {
     static var previews : some View {
