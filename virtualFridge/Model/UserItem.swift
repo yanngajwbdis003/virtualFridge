@@ -1,6 +1,6 @@
 //
 //  UserItem.swift
-//  virtualFridge
+//  virtualFridge = frdige Item
 //
 //  Created by Monica Yang on 2024-01-04.
 //
@@ -10,7 +10,6 @@
 import SwiftUI
 
 struct UserItem: View {
-    
     let name: String
     let expirationDate: Date
     var quantity: Int
