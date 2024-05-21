@@ -9,33 +9,46 @@ import SwiftUI
 
 struct LogInView: View {
     
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = LogInViewModel()
     
     var body: some View {
-        VStack {
-            HeaderView(title: "Your Virtual Fridge!", subtitle: "reduce food waste", bgColor: Color.green)
+        NavigationView {
+            VStack {
+                HeaderView(title: "My Fridge", subtitle: "reduce waste", bgColor: .green)
+                
             
             Form {
-                TextField("Email Address", text: $email)
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(Color.red)
+                }
+                TextField("Email Address", text: $viewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("Password", text: $password)
+                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Button("Log In") {
-                    
+                TLButton(title: "Log In", background: .blue) {
+                    viewModel.login()
+                    }
+                    .padding()
                 }
-                .frame(maxWidth: .infinity)
+                
+
+            
+            VStack {
+                Text("New here?")
+                NavigationLink("Create An Account",
+                               destination: RegisterView())
+            
             }
             
-            
+            Spacer()
+            }
         }
-        
     }
 }
 
-struct LogInView_Previews : PreviewProvider {
-    static var previews : some View {
-        LogInView()
-    }
+#Preview {
+    LogInView()
 }
