@@ -12,6 +12,9 @@ struct User: Codable, Identifiable {
     @DocumentID var id: String?
     var name: String
     var userFridge: [String]
+    
+    
+    
                        
 //    init(username: String, email:String, password: String) {
 //        self.username = username

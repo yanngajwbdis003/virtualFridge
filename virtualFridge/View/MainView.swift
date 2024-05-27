@@ -2,9 +2,11 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewModel()
+    // @ObservedObject var viewModel: MainViewModel
     @State var user: User? //todo: to be removed
     @State private var showingMenu = false
     @State private var userItems: [UserItem] = []
+    @State private var expiredSoonItems: [UserItem] = []
     
 
     var body: some View {
@@ -46,7 +48,7 @@ struct MainView: View {
                 }
                 
                 GroupBox(label: Label("Expiring Soon!", systemImage: "exclamationmark.triangle").foregroundColor(.red)) {
-                    List(viewModel.userItems) { item in
+                    List(viewModel.expiredSoonItems, id: \.id) { item in
                                 VStack(alignment: .leading) {
                                     Text("Food ID: \(item.foodID)")
                                     Text("Quantity: \(item.quantity)")
@@ -54,9 +56,11 @@ struct MainView: View {
                                 }
                             }
                             .onAppear {
-                                viewModel.fetchFridgeItems(){ items in
+                                viewModel.fetchExpiredSoonItems { items in
                                     self.userItems = items
-                                }
+                                    
+                                            }
+                                
                     }
                     .padding()
                     .foregroundColor(.primary)

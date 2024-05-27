@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+import Firebase
 
-struct Food: Codable{
-   // @DocumentID var id: String? // Firestore document ID
+struct Food: Codable, Identifiable {
+    @DocumentID var id: String? // Firestore document ID
     var name: String
     var type: String
     var length: Int // Days till expiration
