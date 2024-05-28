@@ -7,14 +7,27 @@
 
 import SwiftUI
 
-struct FridgeItemViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class FridgeItemViewModel : ObservableObject {
+    @Binding var item: UserItem
+    @Published var newName: String = ""
+    @Published var newExpirationDate: Date = Date()
+    @Published var newDescription: String = ""
+    @Published var shouldNavigate: Bool = false;
+    
+    init (item: Binding<UserItem>) {
+        self._item = item
+        self.newName = item.wrappedValue.name
+        self.newExpirationDate = item.wrappedValue.expirationDate
+        self.newDescription = item.wrappedValue.description
     }
-}
-
-struct FridgeItemViewModel_Previews : PreviewProvider {
-    static var previews : some View {
-        FridgeItemViewModel()
+    
+    func updateInfo(to item: inout UserItem) {
+        item.name = newName
+        item.expirationDate = newExpirationDate
+        item.description = newDescription
     }
+    
+    
+    
+    
 }

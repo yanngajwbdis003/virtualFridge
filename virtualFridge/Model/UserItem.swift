@@ -9,21 +9,5 @@
 
 import SwiftUI
 
-struct UserItem: View {
-    let name: String
-    let expirationDate: Date
-    var quantity: Int
-    var timeUntilExpiration : Int
-    var isExpired: Bool
-    
-    var body: some View {
-        Text("hi :)")
-    }
-    
-    mutating func updateIsExpired() {
-        if timeUntilExpiration <= 0 {
-            isExpired = true
-        }
-    }
-}
+
 
