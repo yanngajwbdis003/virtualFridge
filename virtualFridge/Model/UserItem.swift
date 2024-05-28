@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 import Firebase
 import Foundation
 
+
 struct UserItem: Codable, Identifiable {
     @DocumentID var id: String?
     var quantity: Int
@@ -63,4 +64,7 @@ struct UserItem: Codable, Identifiable {
 //        
 //    }
 }
+
+
+
 

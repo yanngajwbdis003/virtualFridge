@@ -9,6 +9,7 @@ import SwiftUI
 import Firebase
 import FirebaseFirestore
 
+
 class MainViewModel: ObservableObject {
     @Published var currentUserId: String = ""
     private var handler: AuthStateDidChangeListenerHandle?
@@ -24,6 +25,10 @@ class MainViewModel: ObservableObject {
                 self?.currentUserId = user?.uid ?? ""
             }
         }
+
+struct MainViewModel {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
     
     public var isSignedIn: Bool {
@@ -69,6 +74,7 @@ class MainViewModel: ObservableObject {
                     completion([])
                     return
                 }
+
 
                 let group = DispatchGroup()
                 var fetchedItems = [UserItem]()
@@ -159,7 +165,6 @@ class MainViewModel: ObservableObject {
     }
 
 }
-
 
 
 

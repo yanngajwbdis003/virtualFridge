@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C407B872B5C890D00B9CFD0 /* virtualFridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C407B862B5C890D00B9CFD0 /* virtualFridgeTests.swift */; };
 		5C5015A22B4E064900F528B4 /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A12B4E064900F528B4 /* FridgeView.swift */; };
 		5C5015A42B4E066D00F528B4 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A32B4E066D00F528B4 /* NewItemView.swift */; };
 		5C5015A62B4E068A00F528B4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5015A52B4E068A00F528B4 /* RegisterView.swift */; };
@@ -54,7 +55,19 @@
 		FAC5A70F2B475E7D005BC05F /* FridgeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5C407B882B5C890D00B9CFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC5A6CD2B475A38005BC05F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC5A6D42B475A38005BC05F;
+			remoteInfo = virtualFridge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5C407B842B5C890D00B9CFD0 /* virtualFridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = virtualFridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C407B862B5C890D00B9CFD0 /* virtualFridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = virtualFridgeTests.swift; sourceTree = "<group>"; };
 		5C5015A12B4E064900F528B4 /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
 		5C5015A32B4E066D00F528B4 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		5C5015A52B4E068A00F528B4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -82,6 +95,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C407B812B5C890D00B9CFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC5A6D22B475A38005BC05F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,10 +134,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C407B852B5C890D00B9CFD0 /* virtualFridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C407B862B5C890D00B9CFD0 /* virtualFridgeTests.swift */,
+			);
+			path = virtualFridgeTests;
+			sourceTree = "<group>";
+		};
 		FAC5A6CC2B475A38005BC05F = {
 			isa = PBXGroup;
 			children = (
 				FAC5A6D72B475A38005BC05F /* virtualFridge */,
+				5C407B852B5C890D00B9CFD0 /* virtualFridgeTests */,
 				FAC5A6D62B475A38005BC05F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC5A6D52B475A38005BC05F /* virtualFridge.app */,
+				5C407B842B5C890D00B9CFD0 /* virtualFridgeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,10 +204,10 @@
 			children = (
 				FAC5A7002B475CE9005BC05F /* MainViewModel.swift */,
 				FAC5A7022B475CFB005BC05F /* FridgeViewModel.swift */,
+				FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */,
 				FAC5A70A2B475D77005BC05F /* NewItemViewModel.swift */,
 				FAC5A7082B475D47005BC05F /* LogInViewModel.swift */,
 				FAC5A70C2B475D92005BC05F /* RegisterViewModel.swift */,
-				FAC5A70E2B475E7D005BC05F /* FridgeItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,6 +233,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C407B832B5C890D00B9CFD0 /* virtualFridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C407B8A2B5C890D00B9CFD0 /* Build configuration list for PBXNativeTarget "virtualFridgeTests" */;
+			buildPhases = (
+				5C407B802B5C890D00B9CFD0 /* Sources */,
+				5C407B812B5C890D00B9CFD0 /* Frameworks */,
+				5C407B822B5C890D00B9CFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C407B892B5C890D00B9CFD0 /* PBXTargetDependency */,
+			);
+			name = virtualFridgeTests;
+			productName = virtualFridgeTests;
+			productReference = 5C407B842B5C890D00B9CFD0 /* virtualFridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FAC5A6D42B475A38005BC05F /* virtualFridge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC5A6E82B475A3A005BC05F /* Build configuration list for PBXNativeTarget "virtualFridge" */;
@@ -251,9 +299,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					5C407B832B5C890D00B9CFD0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FAC5A6D42B475A38005BC05F;
+					};
 					FAC5A6D42B475A38005BC05F = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -276,11 +328,19 @@
 			projectRoot = "";
 			targets = (
 				FAC5A6D42B475A38005BC05F /* virtualFridge */,
+				5C407B832B5C890D00B9CFD0 /* virtualFridgeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C407B822B5C890D00B9CFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC5A6D32B475A38005BC05F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +354,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C407B802B5C890D00B9CFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C407B872B5C890D00B9CFD0 /* virtualFridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC5A6D12B475A38005BC05F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,7 +391,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5C407B892B5C890D00B9CFD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC5A6D42B475A38005BC05F /* virtualFridge */;
+			targetProxy = 5C407B882B5C890D00B9CFD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5C407B8B2B5C890D00B9CFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yes.virtualFridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/virtualFridge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/virtualFridge";
+			};
+			name = Debug;
+		};
+		5C407B8C2B5C890D00B9CFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yes.virtualFridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/virtualFridge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/virtualFridge";
+			};
+			name = Release;
+		};
 		FAC5A6E62B475A3A005BC05F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -509,6 +625,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C407B8A2B5C890D00B9CFD0 /* Build configuration list for PBXNativeTarget "virtualFridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C407B8B2B5C890D00B9CFD0 /* Debug */,
+				5C407B8C2B5C890D00B9CFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAC5A6D02B475A38005BC05F /* Build configuration list for PBXProject "virtualFridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

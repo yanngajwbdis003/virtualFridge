@@ -20,8 +20,13 @@ struct NewItemView: View {
             Form {
                 
                 TextField("Item Name", text: $viewModel.name)
+
                 
-                DatePicker("Expiry Date", selection: $viewModel.expiaryDate)
+                DatePicker(
+                    "Expiry Date",
+                        selection: $viewModel.expiaryDate,
+                        displayedComponents: [.date]
+                    )
                 
                 Button("Save") {
                     viewModel.save()

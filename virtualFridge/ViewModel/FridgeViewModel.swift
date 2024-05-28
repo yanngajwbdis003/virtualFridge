@@ -4,17 +4,33 @@
 //
 //  Created by Monica Yang on 2024-01-04.
 //
-
 import SwiftUI
 
-struct FridgeViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class FridgeViewModel: ObservableObject {
+    @Published var items : [UserItem] = [UserItem(name: "carrot"), UserItem(name: "potato"), UserItem(name: "ice cream")]
+    
+    @Published var isItemClicked: Bool = false
+
+    func addItem(item: UserItem) {
+        items.append(item)
+      
     }
+    
+    func removeItem(item: UserItem) {
+        if let indexToRemove = items.firstIndex(of: item) {
+            items.remove(at: indexToRemove)
+        } else {
+            
+        }
+    }
+    
+    func clickedItem() {
+        isItemClicked = true
+    }
+    
+    
+    
+    
 }
 
-struct FridgeViewModel_Previews : PreviewProvider {
-    static var previews : some View {
-        FridgeViewModel()
-    }
-}
+
